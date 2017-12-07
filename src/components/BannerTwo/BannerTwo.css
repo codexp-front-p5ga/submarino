@@ -3,3 +3,11 @@
     justify-content: flex-start;
     flex-flow: row wrap;
 }
+
+@media screen and (min-width: 479px) {
+
+    .banner-two {
+        justify-content: space-around
+    }
+
+}
