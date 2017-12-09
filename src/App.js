@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from "react";
+import CardProduct from "./components/23-card-produtos/card-produtos";
+import RelogioDourado from "./img/relogio.jpg";
 
-import Example from './components/Example/Example';
 
-class App extends Component {
-  render() {
-    return (
-      <Example text="Component"/>
-    );
-  }
+var image={
+  src: RelogioDourado,
+  alt: "Relógio Dourado"
 }
 
-export default App;
+export default () =>(
+  <div className="App">
+      <CardProduct name="Relógio Skmei Digital" price="R$89,94" image={image}/>
+  </div>
+);
